@@ -75,12 +75,7 @@
 
             }
         ?>
-                <?php
-                $num_flakes = 30; // Nombre de flocons
-                for ($i = 0; $i < $num_flakes; $i++) {
-                    echo '<div class="snowflake">❄</div>'; // Utilisation d'un caractère de flocon
-                }
-                ?>
+
     </body> 
     <script src="test2.js"></script>
 </html>

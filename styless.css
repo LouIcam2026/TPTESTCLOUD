@@ -236,15 +236,7 @@ body{
     animation: fadeIn 1s ease-in-out forwards; /* Animation FadeIn de 1 seconde */
     margin-bottom: 20px; /* Espacement en bas */
   }
-  .previewphoto img {
-    opacity: 0; /* Opacité initiale à zéro pour l'animation */
-    transition: opacity 1s ease-in-out; /* Transition de l'opacité sur 1 seconde */
-  }
-  
-  /* Animation d'apparition lorsque l'image est chargée */
-  .previewphoto img.loaded {
-    opacity: 1; /* Opacité à un pour montrer l'image */
-  }
+
 
   /* Styles pour la liste d'ingrédients avec animation FadeIn */
 .ingredients {
