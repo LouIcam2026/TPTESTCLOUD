@@ -1,6 +1,6 @@
 <img src="https://github.com/LouIcam2026/TPTESTCLOUD/blob/master/logo_BOB.png?raw=true" width="200" height="200" />
 
-# Les recette de bob
+# Les recettes de bob
 
 ### Collaborators:
 - 🦿 [Romain Kanzer](https://github.com/Cahair)
