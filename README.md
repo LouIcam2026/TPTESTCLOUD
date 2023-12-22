@@ -1,4 +1,4 @@
-<img src="https://github.com/LouIcam2026/EC5-Cloud-TP1/blob/master/Logo.png?raw=true" width="200" height="200" />
+<img src="https://raw.githubusercontent.com/LouIcam2026/TPTESTCLOUD/master/logo_BOB.png" width="200" height="200" />
 
 # Les recette de bob
 
