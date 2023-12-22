@@ -1,0 +1,1439 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    
+    
+}
+img {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    z-index: 1;
+    
+    width:auto;
+    
+    /*pour s'assurer que l'image reste au-dessus des autres �l�ments*/ 
+}
+
+.small-logo-container {
+    position: absolute; /* Positionnement absolu */
+    right: 0; /* Aligné à droite */
+    top: 0; /* Aligné en haut */
+    /* Ajustez la marge à droite si nécessaire */
+}
+  .small-logo {
+    width: 50px;  /* Largeur souhaitée */
+    height: auto;  /* Hauteur ajustée automatiquement pour conserver le ratio d'aspect */
+    float: right;
+    
+}
+
+.img2 {
+    position: absolute;
+    top: 1200px;
+    left: 50px;
+    z-index: 1;
+    height: auto;
+    width: auto;
+    opacity:0;
+    transition: opacity 0.5s; /* Transition pour l'opacité */
+}
+
+/* Classe ajoutée par JS pour démarrer l'animation */
+.img2.start-animation {
+    transform-origin: center; /* Assurez-vous que la rotation se fait autour du centre */
+    animation: spin 4s ;
+    animation-fill-mode: forwards; /* Pour que l'image reste dans l'état final de l'animation */
+    opacity:1;
+
+}
+.img3 {position: absolute;
+top: 1820px;
+left: 50px;
+z-index: 1;
+height: auto;
+width: auto;
+/*pour s'assurer que l'image reste au-dessus des autres �l�ments*/
+transition: opacity 0.5s; /* Transition pour l'opacité */
+opacity:0;
+}
+
+/* Classe ajoutée par JS pour démarrer l'animation */
+.img3.start-animation4 {
+    transform-origin: center; /* Assurez-vous que la rotation se fait autour du centre */
+    animation: spin 4s ;
+    animation-fill-mode: forwards; /* Pour que l'image reste dans l'état final de l'animation */
+    opacity:1;
+
+}
+.title-3d {
+    font-size: 90px;
+    color: #fff;
+    text-shadow: 0 1px 0 #ccc,
+                 0 2px 0 #c9c9c9,
+                 0 3px 0 #bbb,
+                 0 4px 0 #b9b9b9,
+                 0 5px 0 #aaa,
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
+    font-family: 'Helvetica', sans-serif;
+    position: absolute; /* ou 'fixed' selon le contexte */
+    left: 50%;
+    top: 5200px; /* adjusted from 5200px to be within a typical viewable area */
+    transform: translateX(-50%);
+
+}
+.title-3d2 {
+    font-size: 90px;
+    color: #fff;
+    text-shadow: 0 1px 0 #ccc,
+                 0 2px 0 #c9c9c9,
+                 0 3px 0 #bbb,
+                 0 4px 0 #b9b9b9,
+                 0 5px 0 #aaa,
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
+    font-family: 'Helvetica', sans-serif;
+    position: absolute; /* ou 'fixed' selon le contexte */
+    left: 75%;
+    top:250px;
+
+    transform: translateX(-50%);
+
+}
+.title-3d::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px; /* adjust this value to position the underline below the shadow */
+    height: 2px; /* thickness of the underline */
+    background: #fff; /* color of the underline, match your text color */
+    border-radius: 1px; /* optional, if you want rounded corners */
+    
+}
+  .title-3d_black {
+    font-size: 90px;
+    color: #000000;
+    text-shadow: 0 1px 0 #ccc,
+                 0 2px 0 #c9c9c9,
+                 0 3px 0 #bbb,
+                 0 4px 0 #b9b9b9,
+                 0 5px 0 #aaa,
+                 0 6px 1px rgba(0,0,0,.1),
+                 0 0 5px rgba(0,0,0,.1),
+                 0 1px 3px rgba(0,0,0,.3),
+                 0 3px 5px rgba(0,0,0,.2),
+                 0 5px 10px rgba(0,0,0,.25),
+                 0 10px 10px rgba(0,0,0,.2),
+                 0 20px 20px rgba(0,0,0,.15);
+    font-family: 'Helvetica', sans-serif;
+    position: absolute; /* ou 'fixed' selon le contexte */
+    left: 50%;
+    top: 5200px;
+    transform: translateX(-50%);
+  } 
+.img_eras{
+    position: absolute;
+    top: 5420px;
+    left: 14%;
+    z-index: 1;
+    height: auto;
+    width: 430px;
+    opacity:0;
+    transition: opacity 0.5s; /* Transition pour l'opacité */
+}
+.img_eras.start-animation8 {
+    transform-origin: center; /* Assurez-vous que la rotation se fait autour du centre */
+    animation: fadeIn 4s ;
+    animation-fill-mode: forwards; /* Pour que l'image reste dans l'état final de l'animation */
+    opacity:1;
+
+}
+.img_icam{
+    position: absolute;
+    top: 5420px;
+    left: 68%;
+    z-index: 1;
+    height: auto;
+    width: 330px;
+    opacity:0;
+    transition: opacity 0.5s; /* Transition pour l'opacité */
+}
+.img_icam.start-animation9 {
+    transform-origin: center; /* Assurez-vous que la rotation se fait autour du centre */
+    animation: fadeIn 4s ;
+    animation-fill-mode: forwards; /* Pour que l'image reste dans l'état final de l'animation */
+    opacity:1;
+
+}
+.img_pc_declic{
+    position: absolute;
+    top: 4820px;
+    left: 20%;
+    z-index: 1;
+    height: 300px;
+    width: 300px;
+    opacity:0;
+    transition: opacity 0.5s; /* Transition pour l'opacité */
+}
+.img_pc_declic.start-animation7 {
+    transform-origin: center; /* Assurez-vous que la rotation se fait autour du centre */
+    animation: bounce 4s ;
+    animation-fill-mode: forwards; /* Pour que l'image reste dans l'état final de l'animation */
+    opacity:1;
+
+}
+
+.img3.start-animation4 {
+    transform-origin: center; /* Assurez-vous que la rotation se fait autour du centre */
+    animation: spin 4s ;
+    animation-fill-mode: forwards; /* Pour que l'image reste dans l'état final de l'animation */
+    opacity:1;
+
+}
+
+
+
+.img_power {
+    position: relative;
+    top: 0px; /* Assurez-vous que cette valeur de position est ce que vous voulez */
+    left: 0px; /* Ajouté pour aligner le conteneur à gauche de l'écran */
+    z-index: 1;
+    
+
+}
+
+.img_power img{
+    position: relative;
+    top: 0px; /* Assurez-vous que cette valeur de position est ce que vous voulez */
+    left: 50px; /* Ajouté pour aligner le conteneur à gauche de l'écran */
+    z-index: 1;
+    width: 45%; /* Cela permet au conteneur de prendre toute la largeur */
+    height: 700px;
+  
+
+}
+   
+
+
+.img_merco {
+    position: relative;
+    top: 50px;
+    left: 75%;
+    z-index: 1;
+    height: 300px;
+    width: 300px;
+    opacity:0;
+    transition: opacity 0.5s; /* Transition pour l'opacité */
+}
+
+/* Classe ajoutée par JS pour démarrer l'animation */
+.img_merco.start-animation5 {
+    transform-origin: center; /* Assurez-vous que la rotation se fait autour du centre */
+    animation: spin 4s ;
+    animation-fill-mode: forwards; /* Pour que l'image reste dans l'état final de l'animation */
+    opacity:1;
+
+}
+.img_clemessy {
+    position: absolute;
+    top: 4250px;
+    left: 2%;
+    z-index: 1;
+    height: auto;
+    width: 750px;
+    opacity:0;
+    transition: opacity 0.5s; /* Transition pour l'opacité */
+}
+
+/* Classe ajoutée par JS pour démarrer l'animation */
+.img_clemessy.start-animation6 {
+    transform-origin: center; /* Assurez-vous que la rotation se fait autour du centre */
+    animation: pulse 4s ;
+    animation-fill-mode: forwards; /* Pour que l'image reste dans l'état final de l'animation */
+    opacity:1;
+
+}
+    .bandeau a {
+        color: #ffffff; /* couleur du texte (blanc) */
+        margin: 0 10px; /* espacement autour des ic�nes */
+        text-decoration: none; /* supprime le soulignement */
+    }
+
+.bandeau {
+    background-color: #EDF1F1;
+    display: flex;
+    justify-content: center; /* Centrage horizontal des �l�ments */
+    align-items: center;
+    padding: 10px 0; /* espace au-dessus et en-dessous du texte */
+    font-family: Arial, sans-serif;
+    height: 50px;
+    position: fixed; /* position fixe en haut */
+    top: 0; /* ajout de cette ligne pour fixer le bandeau en haut */
+    width: 100%; /* pleine largeur */
+    z-index: 1000; /* s'assurer qu'il reste au-dessus des autres �l�ments */
+    color: #ffffff; /* texte en blanc */
+    text-align: center; /* centrage du texte */
+    font-weight: bold; /* texte en gras */
+}
+
+
+
+
+.bandeau .case {
+    color: black;
+}
+
+.menu-hamburger {
+    position: absolute; /* Le positionnement absolu place le bouton par rapport � .bandeau */
+    top: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column; /* Les barres sont empil�es verticalement */
+    gap: 5px; /* Espace entre les barres */
+    z-index: 1001;
+    position:fixed;
+}
+
+.barre {
+    width: 25px; /* Vous pouvez ajuster la largeur */
+    height: 3px; /* Vous pouvez ajuster la hauteur */
+    background-color: #000000; /* Couleur des barres. Ici, blanc. */
+}
+
+.nav-slide {
+    position: fixed;
+    left: -300px; /* La largeur de votre menu */
+    top: 0;
+    height: 100%;
+    width: 300px; /* Ajustez selon vos pr�f�rences */
+    background-color: #333;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+    
+    
+    
+}
+
+    .nav-slide ul {
+        list-style-type: none;
+        padding: 20px;
+        margin: 0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        text-align: center;
+        font-weight:bold;
+        Font-size:36px;
+    }
+
+        .nav-slide ul li {
+            margin: 10px 0;
+        }
+
+            .nav-slide ul li a {
+                text-decoration: none;
+                color: #fff;
+                font-size: 24px;
+                padding: 10px 20px;
+                display: block;
+            }
+
+    .nav-slide.open {
+        transform: translateX(300px); /* La largeur de votre menu */
+    }
+    .containeur-merco {
+        background-color: #EDF1F1;
+        position: absolute;
+        top: 3825px;
+        left: 3%;
+        width: 1000px;
+        height:100px;
+        text-align:justify;
+        padding:20px;
+        text-justify: inter-word;
+        flex-direction: column; /* Empilement des enfants verticalement */
+        justify-content: center; /* Centrage vertical du contenu */
+        align-items: center;
+        font-size:24px;
+        
+        
+        
+        
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* ombre douce pour donner de la profondeur */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        z-index:2;
+        
+        contain: content;
+    }
+    .containeur_pc_declic{
+        background-color: #EDF1F1;
+        position: absolute;
+        top: 4800px;
+        left: 50%;
+        width: 700px;
+        height:250px;
+        text-align:justify;
+        padding:20px;
+        text-justify: inter-word;
+        flex-direction: column; /* Empilement des enfants verticalement */
+        justify-content: center; /* Centrage vertical du contenu */
+        align-items: center;
+        font-size:24px;
+        
+        
+        
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* ombre douce pour donner de la profondeur */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        z-index:1;
+        
+         
+    }
+    .containeur-clemessy {
+        background-color: #EDF1F1;
+        position: absolute;
+        top: 4225px;
+        left: 50%;
+        width: 700px;
+        height:330px;
+        text-align:justify;
+        padding:20px;
+        text-justify: inter-word;
+        flex-direction: column; /* Empilement des enfants verticalement */
+        justify-content: center; /* Centrage vertical du contenu */
+        align-items: center;
+        font-size:24px;
+        
+        
+        
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* ombre douce pour donner de la profondeur */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        z-index:2;
+        
+        contain: content;
+    }
+
+    .containeur_eras {
+        background-color: #EDF1F1;
+        position: absolute;
+        top: 5625px;
+        left: 2%;
+        width: 700px;
+        height: 250px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centrage vertical du contenu */
+        align-items: center; /* Centrage horizontal du contenu */
+        font-size: 24px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        z-index: 2;
+        contain: content;
+    }
+    
+
+
+
+
+
+
+
+
+    .containeur_icam {
+        background-color: #EDF1F1;
+        position: absolute;
+        top: 5625px;
+        left: 52%;
+        width: 690px;
+        height: 250px;
+        padding: 20px;
+        display: flex; /* Active le Flexbox pour le conteneur */
+        flex-direction: column; /* Empilement des enfants verticalement */
+        justify-content: center; /* Centrage vertical du contenu */
+        align-items: center; /* Centrage horizontal du contenu */
+        font-size: 24px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        z-index: 2;
+        contain: content;
+    }
+    
+    .containeur-presentation {
+        background-color: #EDF1F1;
+        position: absolute;
+        top: 150px;
+        left: 310px;
+        width: 350px;
+        height:198px;
+    
+        max-width: 800px;
+    
+    
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* ombre douce pour donner de la profondeur */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        z-index:2;
+        animation: slideRight 2s ;
+        contain: content;
+    }
+.containeur-diplome1 {
+    background-color: #EDF1F1;
+    position: absolute;
+    top: 1400px;
+    left: 42%;
+    width: 1000px;
+    height: 200px;
+    max-width: 800px;
+    
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* ombre douce pour donner de la profondeur */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 2; 
+    font-family: 'Pacifico', cursive;
+    font-size: 12px;
+    padding:20px;
+    opacity:0;
+    contain: content; 
+}
+.containeur-diplome1.start-animation2
+{
+    animation: slideFadeIn 2s ease forwards;
+ 
+}
+.containeur-diplome3 {
+    background-color: #EDF1F1;
+    position: absolute;
+    top: 1700px;
+    left: 42%;
+    width: 1000px;
+    height: 200px;
+    max-width: 800px;
+
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* ombre douce pour donner de la profondeur */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 2;
+    font-family: 'Pacifico', cursive;
+    font-size: 12px;
+    padding: 20px;
+    opacity:0;
+    contain: content;
+}
+.containeur-diplome3.start-animation4
+{
+    animation: slideFadeIn 3s ease forwards;
+    opacity: 1;
+ 
+}
+
+.containeur-diplome2 {
+    background-color: #EDF1F1;
+    position: absolute;
+    top: 2075px;
+    left: 42%;
+    width: 1000px;
+    height: 200px;
+    max-width: 800px;
+ 
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* ombre douce pour donner de la profondeur */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 2;
+    font-family: 'Pacifico', cursive;
+    font-size: 12px;
+    padding: 20px;
+    opacity: 0;
+    contain: content;
+}
+.containeur-diplome2.start-animation3
+{
+    animation: slideFadeIn 2s ease forwards;
+    opacity: 1;
+ 
+}
+
+
+
+
+
+
+
+
+a.case[href="#presentation-section"] {
+    color: #000000;
+    text-shadow: 3px 3px 6px rgba(1, 1, 1, 0.3); /* Ombre plus marquée */
+}
+
+.case {
+    padding: 10px 15px;
+    background-color: #EDF1F1;
+    margin: 0; /* Suppression des marges pour coller les cases */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    contain: content;
+
+}
+.case:hover{
+    animation: zoomIn 10s infinite ;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+@keyframes zoomIn {
+    from { transform: scale(1); }
+    to   { transform: scale(1.05); }
+  }
+
+@keyframes spin {
+    from { transform: rotate(60deg); }
+    to   { transform: rotate(0deg); }
+  }
+
+@keyframes pulse {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-20px); }
+    60% { transform: translateY(-10px); }
+  }
+
+  @keyframes slideFadeIn {
+    from {
+        transform: translateX(120%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+  @keyframes slidebottom {
+    from { transform: translateY(-75%); }
+    to   { transform: translateY(0); }
+  }
+@keyframes slideRight {
+    from { transform: translateX(-100%); }
+    to   { transform: translateX(0); }
+  }
+@keyframes moveHorizontally1 {
+    0% {
+        left: 60%;
+        top:2560px;
+    }
+
+    100% {
+        left: calc(100% - 350px);
+        ;
+        top: 2460px;
+    }
+}
+
+@keyframes moveHorizontally2 {
+    0% {
+        left: 10%;
+    }
+    50%{
+        left:20%;
+        top:2640px;
+    }
+    100% {
+        left: 40%;
+    }
+}
+
+@keyframes moveHorizontally {
+    0% {
+        left: 0%;
+    }
+
+    50% {
+        left: calc(100% - 350px); /* 350px �tant la largeur du container */
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+@keyframes moveHorizontally3 {
+    0% {
+        left: 0;
+        top: 3242px;
+    }
+    25% {
+        left: 25%;
+        top: 3040px;
+    }
+    50% {
+        left: 55%;
+        top: 3242px;
+    }
+    75% {
+        left: 60%;
+        top: 3040px;
+    }
+
+    100% {
+        left: calc(100% - 350px);
+        top: 3242px;
+    }
+}
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @keyframes blinkCursor {
+    from { border-right-color: rgba(0, 0, 0, 0.75); }
+    to { border-right-color: transparent; }
+  }
+
+  .typewriter {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em; /* Size of typical h1 */
+    font-weight: bold; /* Boldness of typical h1 */
+    margin: 0; /* Remove default h1 margin */
+    display: inline-block;
+    overflow: hidden;
+    border-right: 3px solid rgba(0, 0, 0, 0.75); /* The typewriter cursor */
+    white-space: nowrap;
+    width: 0;
+    animation: typewriter 4s steps(40) 1s forwards, /* Typing effect */
+               blinkCursor 500ms steps(40) infinite; /* Cursor blink effect */
+  }
+.containeur_comp_inf1 {
+    background-color: rgba(255, 165, 0, 0.5); /* Fond transparent orange */
+    position: absolute;
+    top: 2840px;
+    left: 800px;
+    width: 350px;
+    height: 198px;
+    max-width: 800px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 198px; /* Utilis� pour centrer verticalement le texte */
+    font-weight: bold;
+    color: #000000;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1), /* ombre douce pour donner de la profondeur */
+    0 10px 15px rgba(255, 165, 0, 0.2), /* reflet orange sous le container */
+    0 -5px 15px rgba(255, 165, 0, 0.2); /* reflet orange au-dessus du container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: moveHorizontally 10s infinite;
+    
+}
+.containeur_comp_inf2 {
+    background-color: rgba(255, 0, 0, 0.5); /* Fond transparent rouge */
+    position: absolute;
+    top: 2590px;
+    left: 800px;
+    width: 350px;
+    height: 198px;
+    max-width: 800px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 198px; /* Utilis� pour centrer verticalement le texte */
+    font-weight: bold;
+    color: #000000;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1), /* ombre douce pour donner de la profondeur */
+    0 10px 15px rgba(255, 0, 0, 0.2), /* reflet rouge sous le container */
+    0 -5px 15px rgba(255, 0, 0, 0.2); /* reflet rouge au-dessus du container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: moveHorizontally1 5s infinite alternate;
+    
+}
+.containeur_comp_inf3 {
+    background-color: rgba(61, 142, 24,0.5); /* Fond transparent rouge */
+    position: absolute;
+    top: 2590px;
+    left: 100px;
+    width: 350px;
+    height: 198px;
+    max-width: 800px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 198px; /* Utilis� pour centrer verticalement le texte */
+    font-weight: bold;
+    color: #000000;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgb(61, 142, 24,0.2), /* ombre douce pour donner de la profondeur */
+    0 10px 15px rgb(61, 142, 24,0.2), /* reflet rouge sous le container */
+    0 -5px 15px rgb(61, 142, 24,0.2); /* reflet rouge au-dessus du container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: moveHorizontally2 3s infinite alternate;
+    
+}
+.containeur_comp_inf4 {
+    background-color: rgb(0, 0, 255,0.5); /* Fond transparent rouge */
+    position: absolute;
+    top: 2590px;
+    left: 100px;
+    width: 350px;
+    height: 198px;
+    max-width: 800px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 198px; /* Utilis� pour centrer verticalement le texte */
+    font-weight: bold;
+    color: #000000;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgb(0, 0, 255,0.2), /* ombre douce pour donner de la profondeur */
+    0 10px 15px rgb(0, 0, 255,0.2), /* reflet rouge sous le container */
+    0 -5px 15px rgb(0, 0, 255,0.2); /* reflet rouge au-dessus du container */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: moveHorizontally3 20s infinite alternate;
+    
+}
+
+
+.popup {
+    position: absolute;
+    top: 5375px; /* Ajustez ces valeurs pour positionner votre popup */
+    left: 1000px;
+    width: 500px; /* Taille de votre popup */
+    height: 100px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+    visibility: hidden; /* Rendre le popup invisible par d�faut */
+    
+    transition: visibility 0s, opacity 0s linear; /* Transition pour une apparition douce */
+}
+
+
+    .popup::before {
+        content: "";
+        position: absolute;
+        bottom: -20px; /* Ajustez pour positionner la 'queue' correctement */
+        left: 50%; /* Centre la 'queue' par rapport au popup */
+        transform: translateX(-50%); /* Permet de centrer parfaitement la 'queue' */
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent; /* Ajustez pour changer la taille de la 'queue' */
+        border-right: 15px solid transparent; /* Ajustez pour changer la taille de la 'queue' */
+        border-top: 20px solid #FFFFFF; /* La couleur doit �tre la m�me que celle du popup */
+    }
+.containeur_comp_inf:hover + .popup {
+    visibility: visible;
+
+}
+
+
+
+    .containeur-presentation:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+    }
+
+.padding_20px{
+    padding: 20px;
+}
+
+.h2 {
+    font-size: 56px;
+    font-weight: 300;
+    color: #333;
+    line-height: 1.5;
+    padding: 10px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Ombre plus marqu�e */
+}
+.titre_menu{
+    font-size:36px;
+    color:#FFFFFF;
+    font-weight: bold;
+}
+
+.titre.padding_50px_left {
+    padding-left: 50px;
+    font-size: 64px;
+    color: #000000;
+}
+.titre.padding_50px_left_size32 {
+    padding-left: 50px;
+    font-size: 32px;
+    color: #000000;
+}
+
+.introduction {
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    position:absolute;
+    top:150px;
+    left:800px;
+    right:  0px;
+    
+    animation : slidebottom 1.6s ;
+}
+
+
+
+
+
+#presentation-section {
+    margin-top: 0px;
+}
+#langues-section {
+    margin-top: 2300px;
+}
+#langues-section::before {
+    content: "";
+    display: block;
+    height: 30px;
+    margin-top: 0px;
+    visibility: hidden;
+    pointer-events: none; /* Ceci garantit que la pseudo-�l�ment n'interf�re pas avec d'autres �l�ments */
+}
+
+
+#diplomes-section {
+    margin-top: 1000px;
+}
+    /*astuce pour arriver 50px avant la section*/
+    #diplomes-section::before {
+        content: "";
+        display: block;
+        height: 60px;
+        margin-top: -60px;
+        visibility: hidden;
+        pointer-events: none; /* Ceci garantit que la pseudo-�l�ment n'interf�re pas avec d'autres �l�ments */
+    }
+#info-section {
+    margin-top: 2000px;
+    
+}
+#exp_pro-section {
+    margin-top: 2310px;
+    
+}
+   /*astuce pour arriver 50px avant la section*/
+   #exp_pro-section::before {
+    content: "";
+    display: block;
+    height: 60px;
+    margin-top: -60px;
+    visibility: hidden;
+    pointer-events: none; /* Ceci garantit que la pseudo-�l�ment n'interf�re pas avec d'autres �l�ments */
+}
+@keyframes animatedBackgroundGreenLines {
+    0%, 100% {
+        background-position: 0% 50%, 100% 50%, 50% 0%, 50% 100%, 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 50%, 0% 50%, 50% 100%, 50% 0%, 100% 100%;
+    }
+}
+@keyframes animatedBackgroundOrganicLimeGreen {
+    0%, 100% {
+        background-position: 0% 0%, 100% 0%;
+    }
+
+    50% {
+        background-position: 100% 0%, 0% 100%;
+    }
+}
+.background_anime {
+    content: "";
+    position: absolute;
+    top: 440px;
+    left: 0;
+    right: 0;
+    height: 1000px; /* Cela couvre la plage de 2000px � 3000px */
+    font-size: 32px;
+    padding: 20px;
+    z-index: -1; /* Cela garantit que l'arri�re-plan est derri�re le contenu de la page */
+
+
+    background-image: linear-gradient(60deg, transparent 48%, rgba(117, 120, 121, 0.5) 48%, rgba(117, 120, 121, 0.5) 52%, transparent 52%), linear-gradient(120deg, transparent 48%, rgba(117, 120, 121, 0.5) 48%, rgba(117, 120, 121, 0.5) 52%, transparent 52%), linear-gradient(60deg, transparent 48%, rgba(117, 120, 121, 0.5) 48%, rgba(117, 120, 121, 0.5) 52%, transparent 52%), linear-gradient(120deg, transparent 48%, rgba(117, 120, 121, 0.5) 48%, rgba(117, 120, 121, 0.5) 52%, transparent 52%), linear-gradient(135deg, #f4f4f4, #f4f4f4, #f4f4f4);
+    background-size: 30% 200%, 30% 200%, 200% 30%, 200% 30%, 200% 200%;
+    animation: animatedBackgroundGreenLines 30s linear infinite;
+}
+
+.background1 {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 1150px;
+    background: linear-gradient(#EDF1F1, #c7c7c7);
+    
+}
+.background2 {
+    content: "";
+    position: absolute;
+    top: 3700px;
+    left: 0;
+    right: 0;
+    height: 300px;
+    background: linear-gradient(#EDF1F1, #c7c7c7);
+    
+}
+
+    /*astuce pour arriver 50px avant la section*/
+    #info-section::before {
+        content: "";
+        display: block;
+        height: 60px;
+        margin-top: -60px;
+        visibility: hidden;
+        pointer-events: none; /* Ceci garantit que la pseudo-�l�ment n'interf�re pas avec d'autres �l�ments */
+    }
+/*animation souris*/
+.mouse {
+    width: 40px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 25px;
+    position: relative;
+    margin: 50px;
+    background-color: #FFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    top:500px;
+    left: 48%;
+    transform: scale(3);
+    animation: mouseFade 3s infinite;
+    
+
+  }
+.wheel {
+    width: 24px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scroll {
+    width: 4px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: scrollAnim 3s infinite;
+    
+}
+
+@keyframes scrollAnim {
+    0%, 100% {
+        top: 20%;
+    }
+
+    50% {
+        top: 60%;
+    }
+}
+
+@keyframes mouseFade {
+    0%, 40% {
+        opacity: 1;
+    }
+
+    50%, 85% {
+        opacity: 0;
+    }
+
+     100% {
+        opacity: 1;
+    }
+}
+
+
+/*fin animation souris*/
+
+
+
+
+
+.bulle-dialogue {
+    position: relative;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 200px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: none;
+    line-height: 1.4; /* Ajout d'une hauteur de ligne explicite */
+    bottom: 420px;
+    left: 50px;
+    font-weight: bold;
+}
+
+    .bulle-dialogue p {
+        margin: 0; /* R�initialisation de la marge pour les �l�ments <p> � l'int�rieur de la bulle */
+    }
+
+    .bulle-dialogue::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 20px;
+        width: 20px;
+        height: 20px;
+        background-color: #f7f7f7;
+        transform: rotate(45deg);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+.containeur_comp_inf1:hover .bulle-dialogue {
+    display: block; /* Afficher la bulle lorsque la souris survole le conteneur */
+}
+
+.bulle-dialogue1 {
+    position: relative;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: none;
+    line-height: 1.4; /* Ajout d'une hauteur de ligne explicite */
+    
+    left: 50px;
+    font-weight:bold;
+    
+}
+
+    .bulle-dialogue1 p {
+        margin: 0; /* R�initialisation de la marge pour les �l�ments <p> � l'int�rieur de la bulle */
+    }
+
+    .bulle-dialogue1::after {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: 20px;
+        width: 20px;
+        height: 20px;
+        background-color: #f7f7f7;
+        transform: rotate(45deg);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+.containeur_comp_inf2:hover .bulle-dialogue1 {
+    display: block; /* Afficher la bulle lorsque la souris survole le conteneur */
+}
+
+
+
+.bulle-dialogue2 {
+    position: relative;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: none;
+    line-height: 1.4; /* Ajout d'une hauteur de ligne explicite */
+    bottom: 330px;
+    left: 50px;
+    font-weight: bold;
+}
+
+    .bulle-dialogue2 p {
+        margin: 0; /* R�initialisation de la marge pour les �l�ments <p> � l'int�rieur de la bulle */
+    }
+
+    .bulle-dialogue2::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 20px;
+        width: 20px;
+        height: 20px;
+        background-color: #f7f7f7;
+        transform: rotate(45deg);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+.containeur_comp_inf4:hover .bulle-dialogue2 {
+    display: block; /* Afficher la bulle lorsque la souris survole le conteneur */
+}
+.bulle-dialogue3 {
+    position: relative;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: none;
+    line-height: 1.4; /* Ajout d'une hauteur de ligne explicite */
+    bottom:185px;
+    left: 360px;
+    font-weight: bold;
+}
+
+    .bulle-dialogue3 p {
+        margin: 0; /* R�initialisation de la marge pour les �l�ments <p> � l'int�rieur de la bulle */
+    }
+
+    .bulle-dialogue3::after {
+        content: '';
+        position: absolute;
+        top:50%;
+        left: -10px;
+        width: 20px;
+        height: 20px;
+        background-color: #f7f7f7;
+        transform: rotate(45deg);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+.containeur_comp_inf3:hover .bulle-dialogue3 {
+    display: block; /* Afficher la bulle lorsque la souris survole le conteneur */
+}
+
+
+
+.btn-recherche {
+    padding: 5px;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+    .btn-recherche:hover {
+        background-color: #555;
+    }
+
+    .social-links li {
+        display: inline; /* or inline-block */
+        margin-left: 20px; /* Adjust the spacing as needed */
+    }
+    
+    /* Optional: To ensure that the 'CONTACT' label appears above the icons */
+    .social-links titre_menu {
+        display: block; /* This will make it a block element, appearing on its own line */
+        margin-bottom: 10px; /* Space between the 'CONTACT' label and icons */
+    }
+
+
+
+
+
+    .language-skills-container {
+        position: relative;
+        width: 250px;
+        font-family: Arial, sans-serif;
+        left:20%;
+        top:20px;
+      }
+    
+      .skill {
+        margin: 10px 0;
+      }
+    
+      .skill-name {
+        margin-bottom: 5px;
+      }
+    
+      .skill-bar {
+        width: 100%;
+        height: 20px;
+        border: 2px solid #000; /* This adds the black border around the bar */
+        border-radius: 10px;
+        position: relative;
+      }
+    
+      .skill-level {
+        height: 100%;
+        background-color: #000000;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    
+      .skill-level.fr {
+        width: 100.5%; /* Adjust the width percentages to reflect actual skill levels */
+      }
+    
+      .skill-level.en {
+        width: 80%; /* 75% filled for English, 25% outlined empty space */
+      }
+    
+      .skill-level.de {
+        width: 80%;
+      }
+
+
+      .atouts-skills-container {
+        position: relative;
+        width: 250px;
+        font-family: Arial, sans-serif;
+        left:70%;
+        top:-200px;
+      }
+    
+      .atouts {
+        margin: 10px 0;
+      }
+    
+      .atouts-name {
+        margin-bottom: 5px;
+      }
+    
+      .atouts-bar {
+        width: 100%;
+        height: 20px;
+        border: 2px solid #000; /* This adds the black border around the bar */
+        border-radius: 10px;
+        position: relative;
+      }
+    
+      .atouts-level {
+        height: 100%;
+        background-color: #000000;
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    
+      .atouts-level.dy {
+        width: 90%; /* Adjust the width percentages to reflect actual skill levels */
+      }
+    
+      .atouts-level.es {
+        width: 92%; /* 75% filled for English, 25% outlined empty space */
+      }
+    
+      .atouts-level.re {
+        width: 85%;
+      }
+      h1 {
+        font-size: 24px;
+        margin: 10px 0 0 0;
+        font-weight: lighter;
+        text-transform: uppercase;
+        color: #eeeeee;
+      }
+      
+      p {
+        font-size: 12px;
+        font-weight: light;
+        color: #333333;
+      }
+      
+      span a {
+        font-size: 18px;
+        color: #cccccc;
+        text-decoration: none;
+        margin: 0 10px;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          color: #ffffff;
+        }
+      }
+      
+      @keyframes float {
+        0% {
+          box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+          transform: translatey(0px);
+        }
+        50% {
+          box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+          transform: translatey(-20px);
+        }
+        100% {
+          box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+          transform: translatey(0px);
+        }
+      }
+      
+      .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .avatar {
+        width: 150px;
+        height: 150px;
+        box-sizing: border-box;
+        border: 5px white solid;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px);
+        animation: float 6s ease-in-out infinite;
+        img { width: 100%; height: auto; }
+      }
+      
+      .content {
+        width: 100%;
+        max-width: 600px;
+        padding: 20px 40px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      
+      .suppoprt-me {
+        display: inline-block;
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        width: 20vw;
+        max-width: 250px;
+        min-width: 200px;
+        z-index: 9;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .background_orange{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Helvetica', sans-serif;
+        background: rgb(255, 228, 196); /* Couleur de fond orange pâle pour les navigateurs ne supportant pas les gradients */
+        background: -moz-linear-gradient(-45deg, rgba(255, 228, 196, 1) 0%, rgba(255, 69, 0, 1) 100%); /* Dégradé pour Firefox */
+        background: -webkit-linear-gradient(-45deg, rgba(255, 228, 196, 1) 0%, rgba(255, 69, 0, 1) 100%); /* Dégradé pour Chrome et Safari */
+        background: linear-gradient(135deg, rgba(255, 228, 196, 1) 0%, rgba(255, 69, 0, 1) 100%); /* Dégradé standard */
+         
+      }
+
+
+
+      
+ 

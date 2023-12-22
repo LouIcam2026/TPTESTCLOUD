@@ -1,0 +1,258 @@
+body{
+    background-color: #1f1f1f;
+    color: black;
+    font-family: Tahoma, Verdana, sans-serif;
+    size: 20px;
+    }
+    .encadrementarticle {
+        display: flex; /* Utilise Flexbox pour le positionnement des éléments */
+        flex-direction: column; /* Aligne les éléments verticalement */
+        justify-content: center; /* Centre verticalement les éléments */
+        align-items: center; /* Centre horizontalement les éléments */
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+      
+      .encadrementarticle:hover {
+        transform: translateY(-5px); /* Légère translation vers le haut au survol */
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Légère augmentation de l'ombre au survol */
+      }
+
+      
+      
+.previewphoto img{
+    width: 200px;
+    height: auto;
+    }
+
+
+    .bandeau a {
+        color: #ffffff; /* couleur du texte (blanc) */
+        margin: 0 10px; /* espacement autour des ic�nes */
+        text-decoration: none; /* supprime le soulignement */
+    }
+    
+    .bandeau {
+    background-color: #d5b898;
+    display: flex;
+    justify-content: center; /* Centrage horizontal des �l�ments */
+    align-items: center;
+    padding: 10px 0; /* espace au-dessus et en-dessous du texte */
+    font-family: Arial, sans-serif;
+    height: 50px;
+    position: fixed; /* position fixe en haut */
+    top: 0; /* ajout de cette ligne pour fixer le bandeau en haut */
+    width: 100%; /* pleine largeur */
+    z-index: 1000; /* s'assurer qu'il reste au-dessus des autres �l�ments */
+    color: #ffffff; /* texte en blanc */
+    text-align: center; /* centrage du texte */
+    font-weight: bold; /* texte en gras */
+    }
+    
+    
+    
+    .bandeau .case {
+    color: black;
+    }
+    .bandeau a:hover {
+        background-color: #D3D3D3; /* Couleur de fond au survol */
+        border-radius: 5px; /* Bord arrondi pour l'effet de surbrillance */
+    }
+    .small-logo {
+        width: 50px;  /* Largeur souhaitée */
+        height: auto;  /* Hauteur ajustée automatiquement pour conserver le ratio d'aspect */
+    }
+    .menu-hamburger {
+        position: absolute; /* Le positionnement absolu place le bouton par rapport � .bandeau */
+        top: 10px;
+        left: 10px;
+        display: flex;
+        flex-direction: column; /* Les barres sont empil�es verticalement */
+        gap: 5px; /* Espace entre les barres */
+        z-index: 1001;
+        position:fixed;
+        }
+        .barre {
+            width: 25px; /* Vous pouvez ajuster la largeur */
+            height: 3px; /* Vous pouvez ajuster la hauteur */
+            background-color: #000000; /* Couleur des barres. Ici, blanc. */
+            }
+            
+            .nav-slide {
+            position: fixed;
+            left: -300px; /* La largeur de votre menu */
+            top: 0;
+            height: 100%;
+            width: 300px; /* Ajustez selon vos pr�f�rences */
+            background-color: #333;
+            z-index: 1000;
+            transition: transform 0.3s ease-in-out;
+            
+            
+            
+            }
+            
+            .nav-slide ul {
+                list-style-type: none;
+                padding: 20px;
+                margin: 0;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: top;
+                text-align: center;
+                font-weight:bold;
+                Font-size:36px;
+            }
+            
+                .nav-slide ul li {
+                    margin: 10px 0;
+                }
+            
+                    .nav-slide ul li a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 24px;
+                        padding: 10px 20px;
+                        display: block;
+                    }
+            
+            .nav-slide.open {
+                transform: translateX(300px); /* La largeur de votre menu */
+            }
+/* CSS pour centrer horizontalement une image */
+.img-centree {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+/* Style pour le conteneur principal */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px; /* Ajoute une marge pour l'esthétique, ajuste si nécessaire */
+  }
+  
+  /* Style pour le conteneur de l'image */
+  .image-container {
+    margin-bottom: 20px; /* Espacement entre l'image et le texte, ajuste selon tes préférences */
+  }
+  
+  /* Style pour centrer l'image */
+  .centered-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Ajoute d'autres styles spécifiques si nécessaire */
+  }
+
+/* Style pour l'arrière-plan de Noël sans image */
+/* Style pour l'arrière-plan de Noël avec dégradé à partir de #d5b898 */
+/* Style pour un arrière-plan de Noël avec un dégradé moins prononcé à partir de #d5b898 */
+.body.christmas-theme {
+    background-color: #d5b898; /* Couleur de fond de départ */
+  
+    /* Création d'un dégradé moins prononcé */
+    background: linear-gradient(45deg, #d5b898, #f5efe6); /* Dégradé moins prononcé */
+  }
+  
+  
+  
+  /* Tu peux ajouter d'autres styles spécifiques pour l'apparence de la page ici */
+  
+    /* Style pour le titre d'article */
+/* Style pour le lien-titre d'article */
+.titrearticle {
+    font-size: 24px; /* Taille de police du titre */
+    font-weight: bold; /* Gras pour mettre en évidence */
+    text-decoration: none; /* Suppression du soulignement du lien */
+    color: #333; /* Couleur du texte du lien */
+    /* Autres styles de texte pour le lien-titre */
+  }
+  
+  /* Style pour le lien-titre au survol */
+  .titrearticle:hover {
+    color: #ff0000; /* Couleur différente au survol du lien */
+    /* Autres styles pour le survol du lien-titre */
+  }
+  .titre_menu {
+    color: #ffffff !important;
+}
+        /* Animation des flocons */
+        @keyframes snowfall {
+            from {
+              transform: translateY(-10vh) rotate(0deg); /* Début de l'animation (hors de l'écran vers le haut) */
+            }
+            to {
+              transform: translateY(110vh) rotate(360deg); /* Fin de l'animation (hors de l'écran vers le bas) */
+            }
+          }
+  
+          /* Styles des flocons */
+          .snowflake {
+            position: absolute;
+            top: -50px; /* Position initiale au-dessus de l'écran */
+            left: calc(5% + 90% * random()); /* Positionnement aléatoire sur la largeur */
+            opacity: 0.8; /* Opacité des flocons */
+            font-size: 20px; /* Taille des flocons */
+            animation: snowfall linear infinite; /* Animation pour le mouvement des flocons */
+            color: #fff; /* Couleur des flocons */
+            pointer-events: none; /* Ignorer les interactions avec les flocons */
+            animation-duration: 5s, 7s, 9s; /* Durée de l'animation variable pour chaque flocon */
+            animation-delay: 0s, 1s, 2s; /* Décalage de départ variable pour chaque flocon */
+          }
+
+          h1 {
+            font-family: 'Arial', sans-serif; /* Choisir la police souhaitée */
+            font-size: 36px; /* Taille du titre */
+            color: #333; /* Couleur du texte */
+            opacity: 0; /* Opacité initiale à zéro pour l'animation */
+            animation: fadeIn 1s ease-in-out forwards; /* Animation FadeIn de 1 seconde */
+          }
+          
+          /* Animation FadeIn */
+          @keyframes fadeIn {
+            from {
+              opacity: 0; /* Début de l'animation avec opacité à zéro */
+            }
+            to {
+              opacity: 1; /* Fin de l'animation avec opacité à un */
+            }
+          }
+          /* Styles pour la description avec animation FadeIn */
+.description {
+    font-family: 'Arial', sans-serif; /* Choisir la police souhaitée */
+    font-size: 16px; /* Taille de la description */
+    color: #666; /* Couleur du texte */
+    opacity: 0; /* Opacité initiale à zéro pour l'animation */
+    animation: fadeIn 1s ease-in-out forwards; /* Animation FadeIn de 1 seconde */
+    margin-bottom: 20px; /* Espacement en bas */
+  }
+  .previewphoto img {
+    opacity: 0; /* Opacité initiale à zéro pour l'animation */
+    transition: opacity 1s ease-in-out; /* Transition de l'opacité sur 1 seconde */
+  }
+  
+  /* Animation d'apparition lorsque l'image est chargée */
+  .previewphoto img.loaded {
+    opacity: 1; /* Opacité à un pour montrer l'image */
+  }
+
+  /* Styles pour la liste d'ingrédients avec animation FadeIn */
+.ingredients {
+    font-family: 'Arial', sans-serif; /* Choisir la police souhaitée */
+    font-size: 14px; /* Taille de la liste d'ingrédients */
+    color: #888; /* Couleur du texte */
+    opacity: 0; /* Opacité initiale à zéro pour l'animation */
+    animation: fadeIn 1s ease-in-out forwards; /* Animation FadeIn de 1 seconde */
+    margin-bottom: 20px; /* Espacement en bas */
+  }
+  
